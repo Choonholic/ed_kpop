@@ -1,0 +1,75 @@
+#popup_area {
+    display: none;
+    position: fixed;
+    width: 30vw;
+    height: 47.8vw;
+    left: 35vw;
+    top: 0.4vw;
+    background-color: #FFFFFF;
+    box-shadow: 0.2vw 0.2vw rgba(64, 64, 64, 0.4);
+    z-index: 1100;
+}
+
+#popup_close {
+    position: absolute;
+    top: 0.4vw;
+    right: 0.8vw;
+    font-family: Arial, sans-serif;
+    font-size: 2vw;
+    color: #FFFFFF;
+    z-index: 1200;
+    cursor: pointer;
+}
+
+#popup_close:hover {
+    color: #808080;
+    cursor: pointer;
+}
+
+#popup_header {
+    position: absolute;
+    width: 30vw;
+    left: 0;
+    top: 0;
+    height: 30.3vw;
+}
+
+#popup_image {
+    width: 30vw;
+    height: 30.3vw;
+}
+
+#popup_message {
+    position: absolute;
+    width: 26vw;
+    top: 30.3vw;
+    left: 2vw;
+    font-size: 0.8vw;
+    font-family: Abel, Arial, sans-serif;
+    color: #141414;
+}
+
+#popup_message ul {
+    list-style-type: "- ";
+}
+
+#popup_button {
+    position: absolute;
+    width: 16vw;
+    left: 6vw;
+    bottom: 1.4vw;
+    font-family: Teko, Abel, Arial, sans-serif;
+    font-size: 1.4vw;
+    text-align: center;
+    padding: 0.2vw 1vw 0 1vw;
+    color: #FFFFFF;
+    background-color: #FF6666;
+    border: 2px dotted #FF3333;
+    cursor: pointer;
+}
+
+#popup_button:hover {
+    background-color: #AA3333;
+    border: 2px dotted #993333;
+    cursor: pointer;
+}

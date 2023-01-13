@@ -1,0 +1,220 @@
+body {
+    background-color: #161616;
+    background-image: url('../images/bg_youngjun_dimmed.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#menu_btn {
+    color: #FFFFFF;
+}
+
+#webcam_settings {
+    color: #FFFFFF;
+    position: fixed;
+    top: 1.18vw;
+    right: 12vw;
+    cursor: pointer;
+}
+
+#webcam_settings:hover {
+    cursor: pointer;
+}
+
+#webcam_settings_img {
+    width: 1.2vw;
+    height: 1.2vw;
+}
+
+#finish_practice {
+    position: fixed;
+    z-index: 20;
+    right: 2vw;
+    top: 0;
+    margin: 0;
+    font-size: 2vw;
+    font-weight: 700;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    color: #F4F4F4;
+    cursor: pointer;
+}
+
+#finish_practice:hover {
+    color: #FFC7AC;
+    cursor: pointer;
+}
+
+#container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+}
+
+#left {
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#webcam_video_box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+#webcam_video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#right {
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#lesson_video_box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#lesson_video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+#settings_background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: 25;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+}
+
+#settings_box {
+    position: fixed;
+    padding: 1.04vw 2.08vw;
+    width: 30vw;
+    height: 19.125vw;
+    left: 35vw;
+    top: 18.56vw;
+    background-color: #F4F4F4;
+    border: 1px #808080 solid;
+    box-shadow: 0.1vw 0.2vw 0.1vw rgba(0, 0, 0, 0.8);
+    z-index: 26;
+}
+
+#settings_title {
+    font-size: 1.5vw;
+    font-weight: 900;
+    font-family: Lato, Calibri, sans-serif;
+    color: #161616;
+}
+
+#camera_selector {
+    position: absolute;
+    top: 4.5vw;
+    left: 2.08vw;
+}
+
+#flip_selector {
+    position: absolute;
+    top: 8.44vw;
+    left: 2.08vw;
+}
+
+#rotate_selector {
+    position: absolute;
+    top: 12.375vw;
+    left: 2.08vw;
+}
+
+.select select {
+    background-color: #BF876C;
+    color: #F4F4F4;
+    padding: 0.625vw 0.625vw;
+    width: 30vw;
+    border: none;
+    font-size: 1.25vw;
+    box-shadow: 0 0.26vw 1.3vw rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+}
+
+.select:hover select {
+    background-color: #FFC7AC;
+    color: #9F674C;
+}
+
+.select::before {
+    content: "";
+    font-family: Lato, Calibri, sans-serif;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3vw;
+    height: 100%;
+    text-align: center;
+    font-size: 1vw;
+    line-height: 2.34vw;
+    color: #F4F4F4;
+    background-color: #BF876C;
+    pointer-events: none;
+}
+
+.select:hover::before {
+    background-color: #FFC7AC;
+    color: #9F674C;
+}
+
+.select select option {
+    font-size: 1vw;
+    padding: 30px 60px;
+    background-color: #DFA78C;
+    color: #F4F4F4;
+}
+
+#settings_close_btn {
+    position: absolute;
+    right: 2.08vw;
+    bottom: 1.04vw;
+    padding: 0.6vw;
+    width: 5.6vw;
+    height: 1vw;
+    border: none;
+    border-radius: 1vw;
+    background-color: #161616;
+    font-size: 1.1vw;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: center;
+    color: #F4F4F4;
+    cursor: pointer;
+}

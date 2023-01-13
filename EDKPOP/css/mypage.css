@@ -1,0 +1,175 @@
+body {
+    background-color: #FFC7AC;
+    background-image: url('../images/bg_tapaha_dimmed.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#container {
+    position: absolute;
+    width: 100vw;
+    height: 56.25vw;
+    left: 0;
+    top: 0;
+}
+
+#mypage_box {
+    position: absolute;
+    border: 1px solid #161616;
+    background-color: #F4F4F4;
+    width: 40vw;
+    height: 42vw;
+    left: 30vw;
+    top: 9vw;
+}
+
+#mypage_area {
+    position: absolute;
+    width: 25vw;
+    height: 32vw;
+    left: 7.5vw;
+    top: 5vw;
+}
+
+#mypage_title {
+    text-align: center;
+    font-size: 1.46vw;
+    font-weight: 600;
+    color: #161616;
+    margin-bottom: 1.125vw;
+}
+
+#nickname_box {
+    width: 25vw;
+    height: 4.68vw;
+    border-bottom: 2px solid #161616;
+    margin: 0 0 0.52vw 0;
+}
+
+#nick {
+    margin: 1.72vw 2.08vw;
+    width: 20.8vw;
+    height: 1.24vw;
+    background: none;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    font-size: 0.83vw;
+    font-weight: 500;
+    color: #161616;
+    border: none;
+}
+
+#nick:focus {
+    background: #E4E4E4;
+    outline: none;
+}
+
+#current_password_box {
+    width: 25vw;
+    height: 4.68vw;
+    border-bottom: 2px solid #161616;
+    margin: 0.52vw 0 0.952vw 0;
+}
+
+#current_password {
+    margin: 1.72vw 2.08vw;
+    width: 20.8vw;
+    height: 1.24vw;
+    background: none;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    font-size: 0.83vw;
+    font-weight: 500;
+    color: #161616;
+    border: none;
+}
+
+#current_password:focus {
+    background: #E4E4E4;
+    outline: none;
+}
+
+#new_password_box {
+    width: 25vw;
+    height: 4.68vw;
+    border-bottom: 2px solid #161616;
+    margin: 0.52vw 0 0.952vw 0;
+}
+
+#new_password {
+    margin: 1.72vw 2.08vw;
+    width: 20.8vw;
+    height: 1.24vw;
+    background: none;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    font-size: 0.83vw;
+    font-weight: 500;
+    color: #161616;
+    border: none;
+}
+
+#new_password:focus {
+    background: #E4E4E4;
+    outline: none;
+}
+
+#password_verify_box {
+    width: 25vw;
+    height: 4.68vw;
+    border-bottom: 2px solid #161616;
+    margin: 0.52vw 0 0.52vw 0;
+}
+
+#password_verify {
+    margin: 1.72vw 2.08vw;
+    width: 20.8vw;
+    height: 1.24vw;
+    background: none;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    font-size: 0.83vw;
+    font-weight: 500;
+    color: #161616;
+    border: none;
+}
+
+#password_verify:focus {
+    background: #E4E4E4;
+    outline: none;
+}
+
+#save_btn {
+    margin: 0.62vw 0;
+    width: 25vw;
+    height: 4.68vw;
+    border: none;
+    border-radius: 2.34vw;
+    background-color: #161616;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    font-size: 1.25vw;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: center;
+    color: #f4f4f4;
+    cursor: pointer;
+}
+
+#save_btn:hover {
+    background-color: #303030;
+    cursor: pointer;
+}
+
+#mypage_version {
+    position: absolute;
+    text-align: right;
+    right: 0.5vw;
+    bottom: 0.5vw;
+    width: 39vw;
+    height: 0.8vw;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    font-size: 0.66vw;
+    font-weight: 400;
+    color: #363636;
+}

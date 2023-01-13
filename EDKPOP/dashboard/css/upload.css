@@ -1,0 +1,26 @@
+.progress_box {
+    display: none;
+    background-color: #F4F4F4;
+    position: relative;
+    width: 25vw;
+    height: 1.8vw;
+    border-radius: 0.8vw;
+}
+
+.progress_bar {
+    background-color: #663399;
+    width: 0%;
+    height: 1.4vw;
+    padding: 0.2vw;
+    border-radius: 0.8vw;
+}
+
+.percent_text {
+    position: absolute;
+    display: inline-block;
+    color: #C0C0C0;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    font-size: 0.83vw;
+    top: 0.2vw;
+    left: 48%;
+}

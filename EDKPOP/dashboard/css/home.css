@@ -1,0 +1,59 @@
+#container {
+    position: absolute;
+    width: 100vw;
+    height: calc(100vh - 3.3vw);
+    left: 0;
+    top: 3.125vw;
+}
+
+#content {
+    position: absolute;
+    width: 90vw;
+    height: calc(100vh - 3.125vw);
+    right: 0;
+    top: 0;
+}
+
+#users_chart_div {
+    position: absolute;
+    width: 43vw;
+    height: calc(calc(calc(100vh - 3.125vw) / 2) - 2vw);
+    left: 1vw;
+    top: 1vw;
+    padding: 0;
+    border: 1px dotted #161616;
+    text-align: center;
+}
+
+#login_chart_div {
+    position: absolute;
+    width: 43vw;
+    height: calc(calc(calc(100vh - 3.125vw) / 2) - 2vw);
+    left: 45vw;
+    top: 1vw;
+    padding: 0;
+    border: 1px dotted #161616;
+    text-align: center;
+}
+
+#lecture_chart_div {
+    position: absolute;
+    width: 43vw;
+    height: calc(calc(calc(100vh - 3.125vw) / 2) - 2vw);
+    left: 1vw;
+    top: calc(calc(100vh - 3.125vw) / 2);
+    padding: 0;
+    border: 1px dotted #161616;
+    text-align: center;
+}
+
+#disk_chart_div {
+    position: absolute;
+    width: 43vw;
+    height: calc(calc(calc(100vh - 3.125vw) / 2) - 2vw);
+    left: 45vw;
+    top: calc(calc(100vh - 3.125vw) / 2);
+    padding: 0;
+    border: 1px dotted #161616;
+    text-align: center;
+}

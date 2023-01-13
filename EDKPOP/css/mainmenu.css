@@ -1,0 +1,142 @@
+body {
+    background-color: #FFC7AC;
+    background-image: url('../images/bg_tapaha_bright_rev.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#menu_btn {
+    color: #FFFFFF;
+}
+
+#container {
+    position: absolute;
+    width: 100vw;
+    height: 56.25vw;
+    left: 0;
+    top: 0;
+}
+
+#left {
+    width: 50vw;
+    height: 56.25vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+#title_front {
+    position: absolute;
+    left: 17.7vw;
+    top: 20.25vw;
+    width: 14.5vw;
+    height: 15.7vw;
+    font-family: Lato, Calibri, sans-serif;
+    font-size: 3.75vw;
+    font-weight: 900;
+    line-height: 1.5;
+    text-align: left;
+    color: #FFFFFF;
+    z-index: 1;
+}
+
+#title_back {
+    position: absolute;
+    left: 19.8vw;
+    top: 21.26vw;
+    width: 14.5vw;
+    height: 15.7vw;
+    opacity: 0.5;
+    -webkit-text-stroke: 1px #FFFFFF;
+    font-family: Lato, Calibri, sans-serif;
+    font-size: 3.75vw;
+    font-weight: 900;
+    line-height: 1.5;
+    text-align: left;
+}
+
+#right {
+    width: 50vw;
+    height: 56.25vw;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+#main_menu {
+    position: absolute;
+    border: none;
+    width: 50vw;
+    height: 37.5vw;
+    right: 0;
+    top: 9.4vw;
+}
+
+.menu_item {
+    position: relative;
+    width: 50vw;
+    margin: 0;
+    height: 9.38vw;
+    color: #FFFFFF;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.menu_item:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.menu_id {
+    position: absolute;
+    top: 4.11vw;
+    left: 3.12vw;
+    width: 1.4vw;
+    height: 3.33vw;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    font-size: 1.25vw;
+    font-weight: 500;
+    line-height: 0.63;
+    text-align: left;
+    color: #f4f4f4;
+}
+
+.menu_id:hover {
+    color: #161616;
+}
+
+.menu_title {
+    position: absolute;
+    top: 3.94vw;
+    left: 7.65vw;
+    width: 30vw;
+    height: 3.75vw;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    font-size: 2.5vw;
+    font-weight: 900;
+    line-height: 0.31;
+    text-align: left;
+    color: #f4f4f4;
+}
+
+.menu_title:hover {
+    color: #161616;
+}
+
+.menu_arrow {
+    position: absolute;
+    top: 3.85vw;
+    right: 3.125vw;
+    width: 1.66vw;
+    height: 1.66vw;
+}
+
+.menu_arrow img {
+    width: 1.66vw;
+    height: 1.66vw;
+    object-fit: cover;
+    object-position: center;
+}

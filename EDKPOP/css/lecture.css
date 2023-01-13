@@ -1,0 +1,395 @@
+body {
+    background-color: #161616;
+    background-image: url('../images/bg_youngjun_dimmed.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#menu_btn {
+    color: #FFFFFF;
+}
+
+#video_container {
+    width: 100vw;
+    height: 14.06vw;
+    margin: 6.25vw 0 1.04vw 0;
+    overflow: hidden;
+}
+
+#lecture_scroll_left {
+    width: 2.2vw;
+    height: 13.5vw;
+    float: left;
+    cursor: pointer;
+}
+
+#lecture_scroll_left:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+#lecture_scroll_left img {
+    margin: 5.5vw 0.35vw;
+    width: 1.67vw;
+    height: 1.67vw;
+}
+
+#lecture_scroll_right {
+    width: 2.2vw;
+    height: 13.5vw;
+    float: left;
+    cursor: pointer;
+}
+
+#lecture_scroll_right:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+#lecture_scroll_right img {
+    margin: 5.5vw 0.35vw; /* 5.06vw */
+    width: 1.67vw;
+    height: 1.67vw;
+}
+
+#videos {
+    width: 95vw;
+    float: left;
+    overflow: hidden;
+}
+
+.lecture_item {
+    width: 16.67vw;
+    height: 13.02vw;
+    padding: 0.26vw 0.26vw;
+    cursor: pointer;
+    border: 2px rgba(0, 0, 0, 0) solid;
+}
+
+.lecture_item:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+.lecture_item_inner {
+    width: 16.67vw;
+    height: 13.02vw;
+}
+
+.lecture_item_inner .thumbnail {
+    width: 16.67vw;
+    height: 9.37vw;
+    margin-bottom: 0.62vw;
+}
+
+.lecture_item_inner .thumbnail img {
+    width: 16.67vw;
+    height: 9.37vw;
+}
+
+.lecture_item_inner .title {
+    margin: 0.21vw 0;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    font-size: 0.83vw;
+    font-weight: 500;
+    color: #F4F4F4;
+}
+
+.lecture_item_inner .difficulty {
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    font-size: 0.72vw;
+    font-weight: 500;
+    color: #FFC7AC;
+}
+
+#separator {
+    position: fixed;
+    top: 21.35vw;
+    left: 2.5vw;
+    width: 95vw;
+    height: 1px;
+    opacity: 0.15;
+    background-color: #FFFFFF;
+}
+
+#preview_container {
+    width: 95vw;
+    height: 29.25vw;
+    margin: 3.375vw 2.5vw 0 2.5vw;
+}
+
+.preview_block {
+    width: 95vw;
+    height:29.25vw;
+    display: none;
+}
+
+.preview_image {
+    width: 50vw;
+    height: 29.25vw;
+    float: left;
+}
+
+.preview_thumbnail {
+    width: 50vw;
+    height: 28.125vw;
+    margin-bottom: 0.45vw;
+}
+
+.preview_thumbnail img {
+    width: 50vw;
+    height: 28.125vw;
+}
+
+.preview_charts {
+    width: 45vw;
+    float: left;
+}
+
+.preview_progress {
+    float: right;
+    width: 4vw;
+    font-size: 0.6vw;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    color: #F4F4F4;
+    text-align: right;
+}
+
+.preview_info {
+    position: relative;
+    width: 40vw;
+    height: 29.25vw;
+    float: left;
+    margin-left: 4.16vw;
+}
+
+.preview_title {
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    font-size: 2.5vw;
+    font-weight: 900;
+    color: #F4F4F4;
+    margin-bottom: 0.11vw;
+}
+
+.preview_difficulty {
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    font-size: 1.25vw;
+    font-weight: 500;
+    color: #FFC7AC;
+}
+
+.preview_description {
+    height: 9.375vw;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    font-size: 0.83vw;
+    font-weight: 500;
+    line-height: 1.5vw;
+    color: rgba(244, 244, 244, 0.6);
+    margin-top: 3.12vw;
+    margin-bottom: 3.12vw;
+}
+
+.lessons_button {
+    position: absolute;
+    width: 20vw;
+    height: 4.68vw;
+    left: 0;
+    bottom: 1.125vw;
+    border-radius: 2.34vw;
+    background-color: #FFC7AC;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    font-size: 1.25vw;
+    font-weight: 900;
+    color: #161616;
+    text-align: center;
+    line-height: 4.68vw;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.lessons_button:hover {
+    background-color: #F4F4F4;
+    cursor: pointer;
+}
+
+#lesson_exitor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 20;
+    display: none;
+}
+
+#lesson_container {
+    position: fixed;
+    width: 50vw;
+    height: 100vh;
+    right: -50vw;
+    top: 0;
+    background-color: #000000;
+    z-index: 21;
+    padding: 3.12vw 0;
+    transition: 0.5s;
+}
+
+#lesson_list_close {
+    position: absolute;
+    right: 4vw;
+    top: 2.25vw;
+    font-size: 2vw;
+    font-weight: 700;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    color: #F4F4F4;
+    cursor: pointer;
+}
+
+#lesson_list_close:hover {
+    color: #FFC7AC;
+    cursor: pointer;
+}
+
+#lesson_list_title {
+    position: absolute;
+    left: 3.125vw;
+    top: 3.125vw;
+    font-size: 0.94vw;
+    font-weight: 700;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    color: #F4F4F4;
+}
+
+#lesson_container #lesson_scroll_up {
+    position: absolute;
+    top: 5.625vw;
+    right: 0;
+    width: 50vw;
+    height: 0.84vw;
+    z-index: 22;
+    cursor: pointer;
+}
+
+#lesson_container #lesson_scroll_up:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+#lesson_container #lesson_scroll_up img {
+    margin: 0.06vw 23.7vw;
+    width: 1.3vw;
+    height: 0.65vw;
+}
+
+#lesson_container #lesson_scroll_down {
+    position: absolute;
+    top: 50.44vw;
+    right: 0;
+    width: 50vw;
+    height: 0.84vw;
+    z-index: 22;
+    cursor: pointer;
+}
+
+#lesson_container #lesson_scroll_down:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+#lesson_container #lesson_scroll_down img {
+    margin: 0.06vw 23.7vw;
+    width: 1.3vw;
+    height: 0.65vw;
+}
+
+#lesson_list {
+    position: absolute;
+    right: 0;
+    top: 6.9vw;
+    width: 50vw;
+    height: 43.12vw;
+    overflow-y: auto;
+}
+
+.lesson_item {
+    margin: 0 0 0.52vw 0;
+    position: relative;
+    width: 50vw;
+    height: 7.03vw;
+    cursor: pointer;
+}
+
+.lesson_item:hover {
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.lesson_thumbnail {
+    position: absolute;
+    left: 3.125vw;
+    top: 0;
+    width: 12.5vw;
+    height: 7.03vw;
+}
+
+.lesson_thumbnail img {
+    width: 12.5vw;
+    height: 7.03vw;
+}
+
+.lesson_info {
+    position: absolute;
+    left: 16.67vw;
+    top: 0.52vw;
+    height: 100%;
+}
+
+.lesson_title {
+    width: 30vw;
+    font-size: 1.25vw;
+    font-weight: 500;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    color: #F4F4F4;
+}
+
+.lesson_category {
+    font-size: 0.73vw;
+    font-weight: 500;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    color: #FFC7AC;
+}
+
+.lesson_charts {
+    position: absolute;
+    top: 5.32vw;
+    left: 0;
+    width: 25vw;
+}
+
+.lesson_play {
+    position: absolute;
+    right: 1.04vw;
+    top: 2.7vw;
+    width: 1.67vw;
+    height: 1.67vw;
+    display: none;
+}
+
+.lesson_play img {
+    width: 1.67vw;
+    height: 1.67vw;
+}
+
+.lesson_none {
+    color: #F4F4F4;
+    font-size: 1.25vw;
+    font-weight: 500;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    text-align: center;
+    width: 50vw;
+    height: 43.12vw;
+    line-height: 43.12vw;
+}

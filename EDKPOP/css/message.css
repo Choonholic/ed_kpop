@@ -1,0 +1,63 @@
+body {
+    background-color: #161616;
+    background-image: url('../images/bg_tapaha_dimmed.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#container {
+    position: fixed;
+    width: 100vw;
+    height: 56.25vw;
+    left: 0;
+    top: 0;
+}
+
+#msg_box {
+    position: absolute;
+    padding: 0.675vw 0;
+    background-color: #F4F4F4;
+    border: 1px #808080 solid;
+    text-align: center;
+    width: 31.25vw;
+    height: 13.5vw;
+    left: 34.375vw;
+    top: 21.38vw;
+    box-shadow: 0.1vw 0.2vw 0.1vw rgba(0, 0, 0, 0.8);
+}
+
+#msg_title {
+    font-size: 1.46vw;
+    font-weight: 900;
+    color: #FF6666;
+}
+
+#msg_text {
+    font-size: 1vw;
+    margin: 0.675vw 2vw;
+    line-height: 1.2;
+    font-weight: 400;
+    height: 3.12vw;
+    color: #333333;
+}
+
+#msg_btn {
+    margin: 1.69vw 6.87vw;
+    padding: 0.6vw;
+    width: 15.6vw;
+    height: 1vw;
+    border: none;
+    border-radius: 1vw;
+    background-color: #161616;
+    font-size: 1.1vw;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: center;
+    color: #f4f4f4;
+    cursor: pointer;
+}

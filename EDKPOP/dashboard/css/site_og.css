@@ -1,0 +1,157 @@
+#container {
+    position: absolute;
+    width: 100vw;
+    height: calc(100vh - 3.125vw);
+    left: 0;
+    top: 3.125vw;
+}
+
+#content {
+    position: absolute;
+    width: 90vw;
+    height: calc(100vh - 3.125vw);
+    right: 0;
+    top: 0;
+    background-color: #FFFFFF;
+}
+
+#site_title {
+    position: absolute;
+    width: 90vw;
+    height: 1.2vw;
+    font-family: Lato, Calibri, sans-serif;
+    font-size: 1vw;
+    font-weight: 900;
+    padding: 1vw;
+    z-index: 1;
+    color: #161616;
+    background-color: rgba(128, 128, 128, 0.2);
+    border-bottom: 1px solid rgba(22, 22, 22, 0.5);
+}
+
+#site_edit {
+    position: absolute;
+    width: 88vw;
+    height: calc(calc(100vh - 8vw) * 0.44);
+    margin: 1vw;
+    border: 1px dotted #161616;
+    left: 0;
+    top: 3vw;
+}
+
+#site_edit_title {
+    font-family: Lato, Calibri, sans-serif;
+    font-size: 0.83vw;
+    font-weight: 600;
+    padding: 0.6vw 1vw;
+    color: #F4F4F4;
+    background-color: #15317E;
+}
+
+#site_edit_box {
+    margin: 1vw 2vw;
+}
+
+#site_edit_table {
+    border-collapse: collapse;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    font-size: 0.83vw;
+    font-weight: 400;
+    color: #161616;
+    background-color: #FFFFFF;
+    border: none;
+}
+
+#site_edit_table td.table_title {
+    background: rgba(22, 22, 22, 22, 0.4);
+    width: 7vw;
+    font-weight: 600;
+    padding: 0.3vw 2vw 0.3vw 0;
+    vertical-align: top;
+    text-align: right;
+}
+
+#site_edit_table td.table_field {
+    width: 80vw;
+    vertical-align: middle;
+    padding: 0.5w 0;
+}
+
+#site_edit_table td.table_field input[type="text"] {
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    font-size: 0.83vw;
+    font-weight: 400;
+    color: #161616;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px dotted #161616;
+    padding: 0.3vw 0.1vw 0.3vw 0.1vw;
+    width: 40vw;
+}
+
+#site_edit_table td.table_field input[type="text"]:focus {
+    outline: none;
+    background-color: #F4F4F4;
+}
+
+#site_edit_table td.table_field input[type="number"] {
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    font-size: 0.83vw;
+    font-weight: 400;
+    color: #161616;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px dotted #161616;
+    padding: 0.3vw 0.1vw 0.3vw 0.1vw;
+    width: 40vw;
+}
+
+#site_edit_table td.table_field input[type="number"]:focus {
+    outline: none;
+    background-color: #F4F4F4;
+}
+
+#site_edit_table td.table_field textarea {
+    font-family: Consolas, 'Courier New', monospace;
+    font-size: 0.7vw;
+    font-weight: 400;
+    color: #161616;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px dotted #161616;
+    padding: 0.3vw 0.1vw 0.3vw 0.1vw;
+    width: 40vw;
+    height: 30vw;
+}
+
+#site_edit_table td.table_field textarea:focus {
+    outline: none;
+    background-color: #F4F4F4;
+}
+
+#save_btn {
+    margin: 1vw 0;
+    width: 25vw;
+    height: 2vw;
+    border: none;
+    border-radius: 2vw;
+    background-color: #161616;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    font-size: 0.83vw;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: center;
+    color: #f4f4f4;
+    cursor: pointer;
+}
+
+#save_btn:hover {
+    background-color: #303030;
+    cursor: pointer;
+}

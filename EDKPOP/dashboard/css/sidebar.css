@@ -1,0 +1,37 @@
+#sidebar {
+    position: absolute;
+    width: 10vw;
+    height: calc(100vh - 3.125vw);
+    left: 0;
+    top: 0;
+    z-index: 10;
+    background-color: #F4F4F4;
+    border-right: 0.1vw solid rgba(0, 0, 0, 0.4);
+}
+
+#sidebar .sidebar_item {
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    font-size: 0.83vw;
+    font-weight: 500;
+    color: #161616;
+    padding: 0.83vw 1.67vw;
+    cursor: pointer;
+}
+
+#sidebar .sidebar_item:hover {
+    background-color: #FFC7AC;
+    color: #161616;
+    cursor: pointer;
+}
+
+#sidebar .selected {
+    background-color: #565656;
+    color: #F4F4F4;
+    font-weight: 700;
+}
+
+#sidebar .selected:hover {
+    background-color: #565656;
+    color: #F4F4F4;
+    font-weight: 700;
+}

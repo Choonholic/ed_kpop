@@ -1,0 +1,87 @@
+body {
+    background-color: #161616;
+    background-image: url('../images/bg_youngjun_dimmed.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#menu_btn {
+    color: #FFFFFF;
+}
+
+#close_viewer {
+    position: fixed;
+    z-index: 20;
+    right: 2vw;
+    top: 0;
+    margin: 0;
+    font-size: 2vw;
+    font-weight: 700;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    color: #F4F4F4;
+    cursor: pointer;
+}
+
+#close_viewer:hover {
+    color: #FFC7AC;
+    cursor: pointer;
+}
+
+#container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+}
+
+#left {
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#webcam_video_box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+#webcam_video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#right {
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#lesson_video_box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#lesson_video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}

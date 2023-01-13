@@ -1,0 +1,310 @@
+#container {
+    position: absolute;
+    width: 100vw;
+    height: calc(100vh - 3.125vw);
+    left: 0;
+    top: 3.125vw;
+}
+
+#content {
+    position: absolute;
+    width: 90vw;
+    height: calc(100vh - 3.125vw);
+    right: 0;
+    top: 0;
+    background-color: #FFFFFF;
+}
+
+#storage_title {
+    position: absolute;
+    width: 90vw;
+    height: 1.2vw;
+    font-family: Lato, Calibri, sans-serif;
+    font-size: 1vw;
+    font-weight: 900;
+    padding: 1vw;
+    z-index: 1;
+    color: #161616;
+    background-color: rgba(128, 128, 128, 0.2);
+    border-bottom: 1px solid rgba(22, 22, 22, 0.5);
+}
+
+#storage_table {
+    position: absolute;
+    width: 78vw;
+    margin: 1vw;
+    left: 0;
+    top: 3.125vw;
+}
+
+#storage_table table {
+    position: absolute;
+    width: 78vw;
+    left: 0;
+    top: 0;
+}
+
+#storage_table .storage_list_table  {
+    border-collapse: collapse;
+}
+
+#storage_table .filename {
+    width: 30vw;
+}
+
+#storage_table .original {
+    width: 30vw;
+}
+
+#storage_table .size {
+    width: 8.6vw;
+    text-align: right;
+}
+
+#storage_table .actions {
+    width: 5.4vw;
+    text-align: center;
+}
+
+#storage_table .copy_actions {
+    width: 3.2vw;
+    text-align: center;
+}
+
+#storage_table .remove_actions {
+    width: 1.2vw;
+    text-align: center;
+}
+
+#storage_table .nodata {
+    width: 77vw;
+    text-align: center;
+}
+
+#storage_table .storage_list_header {
+    width: 78vw;
+    text-align: center;
+    font-family: Lato, Calibri, sans-serif;
+    font-size: 0.7vw;
+    font-weight: 700;
+    color: #F4F4F4;
+    background-color: #15317E;
+    padding: 0.2vw;
+}
+
+#storage_table .storage_list_header th {
+    padding: 0.4vw 0.5vw;
+}
+
+#storage_table .storage_list_even {
+    width: 78vw;
+    font-size: 0.6vw;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    font-weight: 400;
+    color: #161616;
+    background-color: #FFFFFF;
+}
+
+#storage_table .storage_list_even td {
+    padding: 0.4vw 0.5vw;
+}
+
+#storage_table .storage_list_odd {
+    width: 78vw;
+    font-size: 0.6vw;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    font-weight: 400;
+    color: #161616;
+    background-color: #D1D0CE;
+}
+
+#storage_table .storage_list_odd td {
+    padding: 0.4vw 0.5vw;
+}
+
+#storage_table .copy_storage {
+    padding: 0.1vw 0.4vw;
+    font-size: 0.5vw;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    font-weight: 400;
+    color: #F4F4F4;
+    background-color: #9A7D0A;
+    cursor: pointer;
+}
+
+#storage_table .remove_storage {
+    padding: 0.1vw 0.4vw;
+    font-size: 0.5vw;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    font-weight: 400;
+    color: #F4F4F4;
+    background-color: #F70D1A;
+    cursor: pointer;
+}
+
+#storage_list_nav {
+    position: absolute;
+    width: 76vw;
+    left: 0;
+    top: calc(100vh - 11.4vw);
+    padding: 1vw;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    font-size: 0.83vw;
+    font-weight: 400;
+    color: #161616;
+    background-color: #FFA62F;
+}
+
+#storage_list_nav_buttons {
+    position: absolute;
+    width: 38vw;
+    left: 1vw;
+    top: 0.4vw;
+}
+
+#storage_list_nav_search {
+    position: absolute;
+    width: 38vw;
+    right: 1vw;
+    top: 0.3vw;
+    text-align: right;
+}
+
+#storage_list_first {
+    padding: 0vw 0.5vw 0.16vw 0.5vw;
+    color: #F4F4F4;
+    background-color: #6F4E37;
+    cursor: pointer;
+}
+
+#storage_list_first:hover {
+    background-color: #9C7B64;
+    cursor: pointer;
+}
+
+#storage_list_prev_pages {
+    padding: 0vw 0.5vw 0.16vw 0.5vw;
+    color: #F4F4F4;
+    background-color: #8F6E57;
+    cursor: pointer;
+}
+
+#storage_list_prev_pages:hover {
+    background-color: #AC8B74;
+    cursor: pointer;
+}
+
+#storage_list_prev {
+    padding: 0vw 0.5vw 0.16vw 0.5vw;
+    color: #F4F4F4;
+    background-color: #AC8B74;
+    cursor: pointer;
+}
+
+#storage_list_prev:hover {
+    background-color: #DCBBA4;
+    cursor: pointer;
+}
+
+#storage_list_next {
+    padding: 0vw 0.5vw 0.16vw 0.5vw;
+    color: #F4F4F4;
+    background-color: #AC8B74;
+    cursor: pointer;
+}
+
+#storage_list_next:hover {
+    background-color: #DCBBA4;
+    cursor: pointer;
+}
+
+#storage_list_next_pages {
+    padding: 0vw 0.5vw 0.16vw 0.5vw;
+    color: #F4F4F4;
+    background-color: #8F6E57;
+    cursor: pointer;
+}
+
+#storage_list_next_pages:hover {
+    background-color: #AC8B74;
+    cursor: pointer;
+}
+
+#storage_list_last {
+    padding: 0vw 0.5vw 0.16vw 0.5vw;
+    color: #F4F4F4;
+    background-color: #6F4E37;
+    cursor: pointer;
+}
+
+#storage_list_last:hover {
+    background-color: #9C7B64;
+    cursor: pointer;
+}
+
+#pages {
+    padding: 0.1vw 1vw;
+    cursor: pointer;
+}
+
+#search {
+    width: 10vw;
+    padding: 0.1vw 0.3vw;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    font-size: 0.64vw;
+    font-weight: 400;
+    color: #161616;
+    background-color: #EFB79C;
+    border: 1px dotted #7F472C;
+}
+
+#search:focus {
+    background: #F4F4F4;
+    outline: none;
+}
+
+#search_btn {
+    width: 3vw;
+    padding: 0.1vw;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    font-size: 0.64vw;
+    font-weight: 600;
+    color: #161616;
+    background-color: #FFC7AC;
+    border: 1px solid #7F472C;
+    cursor: pointer;
+}
+
+#storage_actions {
+    position: absolute;
+    width: 10vw;
+    height: calc(100vh - 6.325vw);
+    margin: 0;
+    right: 0;
+    top: 3.125vw;
+    background-color: #FFC7AC;
+}
+
+#storage_actions_title {
+    font-family: Lato, Calibri, sans-serif;
+    font-size: 0.83vw;
+    font-weight: 900;
+    color: #F4F4F4;
+    background-color: #7F472C;
+    padding: 0.83vw 1.67vw;
+}
+
+#storage_actions .storage_action {
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    font-size: 0.66vw;
+    font-weight: 600;
+    color: #161616;
+    padding: 0.83vw 1.67vw;
+    cursor: pointer;
+}
+
+#storage_actions .storage_action:hover {
+    background-color: #BF876C;
+    color: #F4F4F4;
+    cursor: pointer;
+}

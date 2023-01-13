@@ -1,0 +1,187 @@
+#container {
+    position: absolute;
+    width: 100vw;
+    height: calc(100vh - 3.125vw);
+    left: 0;
+    top: 3.125vw;
+}
+
+#content {
+    position: absolute;
+    width: 90vw;
+    height: calc(100vh - 3.125vw);
+    right: 0;
+    top: 0;
+    background-color: #FFFFFF;
+}
+
+#user_title {
+    position: absolute;
+    width: 90vw;
+    height: 1.2vw;
+    font-family: Lato, Calibri, sans-serif;
+    font-size: 1vw;
+    font-weight: 900;
+    padding: 1vw;
+    z-index: 1;
+    color: #161616;
+    background-color: rgba(128, 128, 128, 0.2);
+    border-bottom: 1px solid rgba(22, 22, 22, 0.5);
+}
+
+#user_add {
+    position: absolute;
+    width: 88vw;
+    height: calc(calc(100vh - 10vw) / 2);
+    margin: 1vw;
+    border: 1px dotted #161616;
+    left: 0;
+    top: 3vw;
+}
+
+#user_add_title {
+    font-family: Lato, Calibri, sans-serif;
+    font-size: 0.83vw;
+    font-weight: 600;
+    padding: 0.6vw 1vw;
+    color: #F4F4F4;
+    background-color: #15317E;
+}
+
+#user_add_box {
+    margin: 1vw 2vw;
+}
+
+#email_box {
+    width: 25vw;
+    border-bottom: 2px solid #161616;
+    margin: 0 0 0.925vh 0;
+}
+
+#email {
+    margin: 1vw 2.08vw;
+    width: 20.8vw;
+    background: none;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    font-size: 0.83vw;
+    font-weight: 500;
+    color: #161616;
+    border: none;
+}
+
+#email:focus {
+    background: #F4F4F4;
+    outline: none;
+}
+
+#user_add_btn {
+    margin: 1vw 0;
+    width: 25vw;
+    height: 2vw;
+    border: none;
+    border-radius: 2vw;
+    background-color: #161616;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    font-size: 0.83vw;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: center;
+    color: #f4f4f4;
+    cursor: pointer;
+}
+
+#user_add_btn:hover {
+    background-color: #303030;
+    cursor: pointer;
+}
+
+#user_import {
+    position: absolute;
+    width: 88vw;
+    height: calc(calc(100vh - 10vw) / 2);
+    margin: 1vw;
+    border: 1px dotted #161616;
+    left: 0;
+    top: calc(calc(calc(100vh - 10vw) / 2) + 4vw);
+}
+
+#user_import_title {
+    font-family: Lato, Calibri, sans-serif;
+    font-size: 0.83vw;
+    font-weight: 600;
+    padding: 0.6vw 1vw;
+    color: #F4F4F4;
+    background-color: #15317E;
+}
+
+#user_import_box {
+    margin: 1vw 2vw;
+}
+
+#upload_title {
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    font-size: 0.83vw;
+    font-weight: 700;
+    color: #161616;
+    margin-bottom: 1vw;
+}
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    max-width: 80%;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+    color: #f1e5e6;
+    background-color: #d3394c;
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile + label:hover {
+    background-color: #722040;
+}
+
+#user_import_btn {
+    margin: 1vw 0;
+    width: 25vw;
+    height: 2vw;
+    border: none;
+    border-radius: 2vw;
+    background-color: #161616;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    font-size: 0.83vw;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: center;
+    color: #f4f4f4;
+    cursor: pointer;
+}
+
+#user_import_btn:hover {
+    background-color: #303030;
+    cursor: pointer;
+}

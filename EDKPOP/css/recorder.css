@@ -1,0 +1,908 @@
+body {
+    background-color: #161616;
+    background-image: url('../images/bg_youngjun_dimmed.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#menu_btn {
+    color: #FFFFFF;
+}
+
+#record_list {
+    color: #FFFFFF;
+    position: fixed;
+    top: 1.18vw;
+    right: 24vw;
+    cursor: pointer;
+}
+
+#record_list:hover {
+    cursor: pointer;
+}
+
+#record_list_img {
+    width: 1.2vw;
+    height: 1.2vw;
+}
+
+#record_start {
+    color: #FFFFFF;
+    position: fixed;
+    top: 1.18vw;
+    right: 21vw;
+    cursor: pointer;
+}
+
+#record_start:hover {
+    cursor: pointer;
+}
+
+#record_start_img {
+    width: 1.2vw;
+    height: 1.2vw;
+}
+
+#record_stop {
+    display: none;
+    color: #FFFFFF;
+    position: fixed;
+    top: 1.18vw;
+    right: 21vw;
+    cursor: pointer;
+}
+
+#record_stop:hover {
+    cursor: pointer;
+}
+
+#record_stop_img {
+    width: 1.2vw;
+    height: 1.2vw;
+}
+
+#single_recording {
+    color: #FFFFFF;
+    position: fixed;
+    top: 1.18vw;
+    right: 18vw;
+    cursor: pointer;
+}
+
+#single_recording:hover {
+    cursor: pointer;
+}
+
+#single_recording_img {
+    width: 1.2vw;
+    height: 1.2vw;
+}
+
+#dual_recording {
+    color: #FFFFFF;
+    position: fixed;
+    top: 1.18vw;
+    right: 15vw;
+    cursor: pointer;
+}
+
+#dual_recording:hover {
+    cursor: pointer;
+}
+
+#dual_recording_img {
+    width: 1.2vw;
+    height: 1.2vw;
+}
+
+#webcam_settings {
+    color: #FFFFFF;
+    position: fixed;
+    top: 1.18vw;
+    right: 12vw;
+    cursor: pointer;
+}
+
+#webcam_settings:hover {
+    cursor: pointer;
+}
+
+#webcam_settings_img {
+    width: 1.2vw;
+    height: 1.2vw;
+}
+
+#close_recorder {
+    position: fixed;
+    z-index: 20;
+    right: 2vw;
+    top: 0;
+    margin: 0;
+    font-size: 2vw;
+    font-weight: 700;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    color: #F4F4F4;
+    cursor: pointer;
+}
+
+#close_recorder:hover {
+    color: #FFC7AC;
+    cursor: pointer;
+}
+
+#container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+}
+
+#left {
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#webcam_video_box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+#webcam_video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+}
+
+#right {
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+}
+
+#lesson_video_box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#lesson_video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    z-index: 0;
+}
+
+#settings_background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: 25;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+}
+
+#settings_box {
+    position: fixed;
+    padding: 1.04vw 2.08vw;
+    width: 30vw;
+    height: 19.125vw;
+    left: 35vw;
+    top: 18.56vw;
+    background-color: #F4F4F4;
+    border: 1px #808080 solid;
+    box-shadow: 0.1vw 0.2vw 0.1vw rgba(0, 0, 0, 0.8);
+    z-index: 26;
+}
+
+#settings_title {
+    font-size: 1.5vw;
+    font-weight: 900;
+    font-family: Lato, Calibri, sans-serif;
+    color: #161616;
+}
+
+#camera_selector {
+    position: absolute;
+    top: 4.5vw;
+    left: 2.08vw;
+}
+
+#flip_selector {
+    position: absolute;
+    top: 8.44vw;
+    left: 2.08vw;
+}
+
+#rotate_selector {
+    position: absolute;
+    top: 12.375vw;
+    left: 2.08vw;
+}
+
+.select select {
+    background-color: #BF876C;
+    color: #F4F4F4;
+    padding: 0.625vw 0.625vw;
+    width: 30vw;
+    border: none;
+    font-size: 1.25vw;
+    box-shadow: 0 0.26vw 1.3vw rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+}
+
+.select:hover select {
+    background-color: #FFC7AC;
+    color: #9F674C;
+}
+
+.select::before {
+    content: "";
+    font-family: Lato, Calibri, sans-serif;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3vw;
+    height: 100%;
+    text-align: center;
+    font-size: 1vw;
+    line-height: 2.34vw;
+    color: #F4F4F4;
+    background-color: #BF876C;
+    pointer-events: none;
+}
+
+.select:hover::before {
+    background-color: #FFC7AC;
+    color: #9F674C;
+}
+
+.select select option {
+    font-size: 1vw;
+    padding: 30px 60px;
+    background-color: #DFA78C;
+    color: #F4F4F4;
+}
+
+#settings_close_btn {
+    position: absolute;
+    right: 2.08vw;
+    bottom: 1.04vw;
+    padding: 0.6vw;
+    width: 5.6vw;
+    height: 1vw;
+    border: none;
+    border-radius: 1vw;
+    background-color: #161616;
+    font-size: 1.1vw;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: center;
+    color: #F4F4F4;
+    cursor: pointer;
+}
+
+#recording_exitor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 20;
+    display: none;
+}
+
+#recording_container {
+    position: fixed;
+    width: 50vw;
+    height: 100vh;
+    right: -50vw;
+    top: 0;
+    background-color: #000000;
+    z-index: 21;
+    padding: 3.12vw 0;
+    transition: 0.5s;
+}
+
+#recording_list_close {
+    position: absolute;
+    right: 4vw;
+    top: 2.25vw;
+    font-size: 2vw;
+    font-weight: 700;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    color: #F4F4F4;
+    cursor: pointer;
+}
+
+#recording_list_close:hover {
+    color: #FFC7AC;
+    cursor: pointer;
+}
+
+#recording_list_title {
+    position: absolute;
+    left: 3.125vw;
+    top: 3.125vw;
+    font-size: 0.94vw;
+    font-weight: 700;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    color: #F4F4F4;
+}
+
+#recording_container #recording_scroll_up {
+    position: absolute;
+    top: 5.625vw;
+    right: 0;
+    width: 50vw;
+    height: 0.84vw;
+    z-index: 22;
+    cursor: pointer;
+}
+
+#recording_container #recording_scroll_up:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+#recording_container #recording_scroll_up img {
+    margin: 0.06vw 23.7vw;
+    width: 1.3vw;
+    height: 0.65vw;
+}
+
+#recording_container #recording_scroll_down {
+    position: absolute;
+    top: 50.44vw;
+    right: 0;
+    width: 50vw;
+    height: 0.84vw;
+    z-index: 22;
+    cursor: pointer;
+}
+
+#recording_container #recording_scroll_down:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+#recording_container #recording_scroll_down img {
+    margin: 0.06vw 23.7vw;
+    width: 1.3vw;
+    height: 0.65vw;
+}
+
+#recording_list {
+    position: absolute;
+    right: 0;
+    top: 6.9vw;
+    width: 50vw;
+    height: 43.12vw;
+    overflow-y: auto;
+}
+
+.recording_item {
+    margin: 0 0 0.52vw 0;
+    position: relative;
+    width: 50vw;
+    height: 7.03vw;
+    cursor: pointer;
+}
+
+.recording_item:hover {
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.recording_thumbnail {
+    position: absolute;
+    left: 3.125vw;
+    top: 0;
+    width: 12.5vw;
+    height: 7.03vw;
+    background-color: #BF876C;
+}
+
+.recording_thumbnail img {
+    width: 12.5vw;
+    height: 7.03vw;
+}
+
+.recording_info {
+    position: absolute;
+    left: 16.67vw;
+    top: 0.52vw;
+    height: 100%;
+}
+
+.recording_lesson {
+    width: 30vw;
+    font-size: 1.25vw;
+    font-weight: 500;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    color: #F4F4F4;
+}
+
+.recording_category {
+    font-size: 0.73vw;
+    font-weight: 500;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    color: #FFC7AC;
+}
+
+.recording_uniquekey {
+    font-size: 0.7vw;
+    font-weight: 400;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    color: #808080;
+    position: absolute;
+    top: 5.1vw;
+    left: 0;
+}
+
+.recording_download {
+    position: absolute;
+    right: 4.2vw;
+    top: 2.7vw;
+    width: 1.67vw;
+    height: 1.67vw;
+    background-image: url('../images/download.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.recording_download:hover {
+    background-image: url('../images/download_selected.png');
+}
+
+.recording_delete {
+    position: absolute;
+    right: 1.2vw;
+    top: 2.7vw;
+    width: 1.67vw;
+    height: 1.67vw;
+    background-image: url('../images/delete.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.recording_delete:hover {
+    background-image: url('../images/delete_selected.png');
+}
+
+.recording_none {
+    color: #F4F4F4;
+    font-size: 1.25vw;
+    font-weight: 500;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    text-align: center;
+    width: 50vw;
+    height: 43.12vw;
+    line-height: 43.12vw;
+}
+
+#lecture_exitor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 20;
+    display: none;
+}
+
+#lecture_container {
+    position: fixed;
+    width: 50vw;
+    height: 100vh;
+    right: -50vw;
+    top: 0;
+    background-color: #000000;
+    z-index: 21;
+    padding: 3.12vw 0;
+    transition: 0.5s;
+}
+
+#lecture_list_close {
+    position: absolute;
+    right: 4vw;
+    top: 2.25vw;
+    font-size: 2vw;
+    font-weight: 700;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    color: #F4F4F4;
+    cursor: pointer;
+}
+
+#lecture_list_close:hover {
+    color: #FFC7AC;
+    cursor: pointer;
+}
+
+#lecture_list_title {
+    position: absolute;
+    left: 3.125vw;
+    top: 3.125vw;
+    font-size: 0.94vw;
+    font-weight: 700;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    color: #F4F4F4;
+}
+
+#lecture_container #lecture_scroll_up {
+    position: absolute;
+    top: 5.625vw;
+    right: 0;
+    width: 50vw;
+    height: 0.84vw;
+    z-index: 22;
+    cursor: pointer;
+}
+
+#lecture_container #lecture_scroll_up:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+#lecture_container #lecture_scroll_up img {
+    margin: 0.06vw 23.7vw;
+    width: 1.3vw;
+    height: 0.65vw;
+}
+
+#lecture_container #lecture_scroll_down {
+    position: absolute;
+    top: 50.44vw;
+    right: 0;
+    width: 50vw;
+    height: 0.84vw;
+    z-index: 22;
+    cursor: pointer;
+}
+
+#lecture_container #lecture_scroll_down:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+#lecture_container #lecture_scroll_down img {
+    margin: 0.06vw 23.7vw;
+    width: 1.3vw;
+    height: 0.65vw;
+}
+
+#lecture_list {
+    position: absolute;
+    right: 0;
+    top: 6.9vw;
+    width: 50vw;
+    height: 43.12vw;
+    overflow-y: auto;
+}
+
+.lecture_item {
+    margin: 0 0 0.52vw 0;
+    position: relative;
+    width: 50vw;
+    height: 7.03vw;
+    cursor: pointer;
+}
+
+.lecture_item:hover {
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.lecture_thumbnail {
+    position: absolute;
+    left: 3.125vw;
+    top: 0;
+    width: 12.5vw;
+    height: 7.03vw;
+}
+
+.lecture_thumbnail img {
+    width: 12.5vw;
+    height: 7.03vw;
+}
+
+.lecture_info {
+    position: absolute;
+    left: 16.67vw;
+    top: 0.52vw;
+    height: 100%;
+}
+
+.lecture_title {
+    width: 30vw;
+    font-size: 1.25vw;
+    font-weight: 500;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    color: #F4F4F4;
+}
+
+.lecture_difficulty {
+    font-size: 0.73vw;
+    font-weight: 500;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    color: #FFC7AC;
+}
+
+.lecture_charts {
+    position: absolute;
+    top: 5.32vw;
+    left: 0;
+    width: 25vw;
+}
+
+.lecture_none {
+    color: #F4F4F4;
+    font-size: 1.25vw;
+    font-weight: 500;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    text-align: center;
+    width: 50vw;
+    height: 43.12vw;
+    line-height: 43.12vw;
+}
+
+#lesson_exitor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 20;
+    display: none;
+}
+
+#lesson_container {
+    position: fixed;
+    width: 50vw;
+    height: 100vh;
+    right: -50vw;
+    top: 0;
+    background-color: #000000;
+    z-index: 21;
+    padding: 3.12vw 0;
+    transition: 0.5s;
+}
+
+#lesson_list_close {
+    position: absolute;
+    right: 4vw;
+    top: 2.25vw;
+    font-size: 2vw;
+    font-weight: 700;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    color: #F4F4F4;
+    cursor: pointer;
+}
+
+#lesson_list_close:hover {
+    color: #FFC7AC;
+    cursor: pointer;
+}
+
+#lesson_list_title {
+    position: absolute;
+    left: 3.125vw;
+    top: 3.125vw;
+    font-size: 0.94vw;
+    font-weight: 700;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    color: #F4F4F4;
+}
+
+#lesson_container #lesson_scroll_up {
+    position: absolute;
+    top: 5.625vw;
+    right: 0;
+    width: 50vw;
+    height: 0.84vw;
+    z-index: 22;
+    cursor: pointer;
+}
+
+#lesson_container #lesson_scroll_up:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+#lesson_container #lesson_scroll_up img {
+    margin: 0.06vw 23.7vw;
+    width: 1.3vw;
+    height: 0.65vw;
+}
+
+#lesson_container #lesson_scroll_down {
+    position: absolute;
+    top: 50.44vw;
+    right: 0;
+    width: 50vw;
+    height: 0.84vw;
+    z-index: 22;
+    cursor: pointer;
+}
+
+#lesson_container #lesson_scroll_down:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+#lesson_container #lesson_scroll_down img {
+    margin: 0.06vw 23.7vw;
+    width: 1.3vw;
+    height: 0.65vw;
+}
+
+#lesson_list {
+    position: absolute;
+    right: 0;
+    top: 6.9vw;
+    width: 50vw;
+    height: 43.12vw;
+    overflow-y: auto;
+}
+
+.lesson_item {
+    margin: 0 0 0.52vw 0;
+    position: relative;
+    width: 50vw;
+    height: 7.03vw;
+    cursor: pointer;
+}
+
+.lesson_item:hover {
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.lesson_thumbnail {
+    position: absolute;
+    left: 3.125vw;
+    top: 0;
+    width: 12.5vw;
+    height: 7.03vw;
+}
+
+.lesson_thumbnail img {
+    width: 12.5vw;
+    height: 7.03vw;
+}
+
+.lesson_info {
+    position: absolute;
+    left: 16.67vw;
+    top: 0.52vw;
+    height: 100%;
+}
+
+.lesson_title {
+    width: 30vw;
+    font-size: 1.25vw;
+    font-weight: 500;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    color: #F4F4F4;
+}
+
+.lesson_category {
+    font-size: 0.73vw;
+    font-weight: 500;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    color: #FFC7AC;
+}
+
+.lesson_charts {
+    position: absolute;
+    top: 5.32vw;
+    left: 0;
+    width: 25vw;
+}
+
+.lesson_play {
+    position: absolute;
+    right: 1.04vw;
+    top: 2.7vw;
+    width: 1.67vw;
+    height: 1.67vw;
+    display: none;
+}
+
+.lesson_play img {
+    width: 1.67vw;
+    height: 1.67vw;
+}
+
+#lesson_none {
+    color: #FFFFFF;
+    font-size: 1.25vw;
+    font-weight: 500;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    text-align: center;
+    width: 50vw;
+    height: 43.12vw;
+    line-height: 43.12vw;
+}
+
+#process_box {
+    display: none;
+    position: fixed;
+    background-color: #F4F4F4;
+    border: 1px #808080 solid;
+    text-align: center;
+    width: 40vw;
+    height: 8vw;
+    left: 30vw;
+    top: calc(40vh - 4vw);
+    box-shadow: 0.1vw 0.2vw 0.1vw rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+
+#process_message {
+    font-size: 1.1vw;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    padding: 2.5px 0 0.5px 0;
+    font-weight: 500;
+    color: #333333;
+}
+
+#process_description {
+    font-size: 0.83vw;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.5px 0 2.5px 0;
+    font-weight: 400;
+    color: #161616;
+}
+
+#record_countdown {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    font-size: 40vw;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.6);
+    text-align:  center;
+    vertical-align: middle;
+    line-height: 100vh;
+    z-index: 800;
+}

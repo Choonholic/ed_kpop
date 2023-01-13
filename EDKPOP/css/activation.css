@@ -1,0 +1,175 @@
+body {
+    background-color: #FFC7AC;
+    background-image: url('../images/bg_tapaha.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#container {
+    position: absolute;
+    width: 100vw;
+    height: 56.25vw;
+    left: 0;
+    top: 0;
+}
+
+#left {
+    width: 50vw;
+    height: 56.25vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+#title_front {
+    position: absolute;
+    left: 17.7vw;
+    top: 20.25vw;
+    width: 14.5vw;
+    height: 15.7vw;
+    font-family: Lato, Calibri, sans-serif;
+    font-size: 3.75vw;
+    font-weight: 900;
+    line-height: 1.5;
+    text-align: left;
+    color: #FFC7AC;
+    z-index: 1;
+}
+
+#title_back {
+    position: absolute;
+    left: 19.8vw;
+    top: 21.26vw;
+    width: 14.5vw;
+    height: 15.7vw;
+    opacity: 0.5;
+    -webkit-text-stroke: 1px #FFC7AC;
+    font-family: Lato, Calibri, sans-serif;
+    font-size: 3.75vw;
+    font-weight: 900;
+    line-height: 1.5;
+    text-align: left;
+}
+
+#right {
+    width: 50vw;
+    height: 56.25vw;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+#activation_box {
+    position: absolute;
+    border: none;
+    width: 25vw;
+    height: 29.25vw;
+    left: 12.5vw;
+    top: 16.31vw;
+}
+
+#activation_title {
+    text-align: center;
+    font-size: 1.46vw;
+    font-weight: 600;
+    color: #161616;
+    margin-bottom: 1.125vw;
+}
+
+#nickname_box {
+    width: 25vw;
+    height: 4.68vw;
+    border-bottom: 2px solid #161616;
+    margin: 0 0 0.52vw 0;
+}
+
+#nick {
+    margin: 1.72vw 2.08vw;
+    width: 20.8vw;
+    height: 1.24vw;
+    background: none;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    font-size: 0.83vw;
+    font-weight: 500;
+    color: #161616;
+    border: none;
+}
+
+#nick:focus {
+    background: #F4F4F4;
+    outline: none;
+}
+
+#password_box {
+    width: 25vw;
+    height: 4.68vw;
+    border-bottom: 2px solid #161616;
+    margin: 0.52vw 0 0.952vw 0;
+}
+
+#password {
+    margin: 1.72vw 2.08vw;
+    width: 20.8vw;
+    height: 1.24vw;
+    background: none;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    font-size: 0.83vw;
+    font-weight: 500;
+    color: #161616;
+    border: none;
+}
+
+#password:focus {
+    background: #F4F4F4;
+    outline: none;
+}
+
+#password_verify_box {
+    width: 25vw;
+    height: 4.68vw;
+    border-bottom: 2px solid #161616;
+    margin: 0.52vw 0 0.52vw 0;
+}
+
+#password_verify {
+    margin: 1.72vw 2.08vw;
+    width: 20.8vw;
+    height: 1.24vw;
+    background: none;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    font-size: 0.83vw;
+    font-weight: 500;
+    color: #161616;
+    border: none;
+}
+
+#password_verify:focus {
+    background: #F4F4F4;
+    outline: none;
+}
+
+#activation_btn {
+    margin: 0.62vw 0;
+    width: 25vw;
+    height: 4.68vw;
+    border: none;
+    border-radius: 2.34vw;
+    background-color: #161616;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    font-size: 1.25vw;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: center;
+    color: #f4f4f4;
+    cursor: pointer;
+}
+
+#activation_btn:hover {
+    background-color: #303030;
+    cursor: pointer;
+}

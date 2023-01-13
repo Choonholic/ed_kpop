@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+a:link, a:hover, a:visited {
+    text-decoration: none;
+}
+
+#header {
+    position: fixed;
+    z-index: 10;
+}
+
+#logo {
+    position: fixed;
+    left: 4.16vw;
+    top: 1.04vw;
+    cursor: pointer;
+    width: 4vw;
+    height: 1.56vw;
+}
+
+#logo img {
+    width: 3.3vw;
+    height: 1.56vw;
+    object-fit: cover;
+    object-position: center;
+}
+
+#nickname {
+    position: fixed;
+    right: 4.16vw;
+    top: 1.18vw;
+    width: 7.8vw;
+    height: 0.93vw;
+    font-family: 'Noto Sans KR', Calibri, sans-serif;
+    font-size: 0.83vw;
+    font-weight: 500;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+#menu_btn {
+    position: fixed;
+    top: 1.56vw;
+    left: 3.125vw;
+    font-size: 1.67vw;
+    cursor: pointer;
+    border: none;
+}
+
+#menu_btn:hover {
+    color: #808080;
+}
+
+#side_panel {
+    position: fixed;
+    width: 0;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    background-color: #F4F4F4;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0.5s;
+    box-shadow: 0.2vw 0.2vw 0.2vw rgba(0, 0, 0, 0.4);
+}
+
+#side_panel #menu_close_btn {
+    position: absolute;
+    top: 1.04vw;
+    right: 2.08vw;
+    font-size: 2.5vw;
+    cursor: pointer;
+    color: #999999;
+    border: none;
+}
+
+#side_panel #menu_close_btn:hover {
+    color: #333333;
+}
+
+#side_panel .menu_top_item {
+    padding: 2.18vw 0 2.18vw 4.17vw;
+    width: 100%;
+    height: 1.87vw;
+    font-size: 1.25vw;
+    font-weight: 900;
+    color: #999999;
+    display: block;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#side_panel .menu_bottom_item {
+    padding: 1.56vw 0 1.56vw 4.17vw;
+    width: 100%;
+    height: 1.04vw;
+    font-size: 0.94vw;
+    font-weight: 700;
+    color: #999999;
+    display: block;
+    transition: 0.3s;
+}
+
+#side_panel #menu_lecture_practice {
+    position: absolute;
+    top: 5.325vw;
+    left: 0;
+}
+
+#side_panel #menu_self_recording {
+    position: absolute;
+    top: 11.57vw;
+    left: 0;
+}
+
+#side_panel #menu_ask_to_teacher {
+    position: absolute;
+    top: 17.83vw;
+    left: 0;
+}
+
+#side_panel #menu_ed_community {
+    position: absolute;
+    top: 24.07vw;
+    left: 0;
+}
+
+#side_panel #menu_mypage {
+    position: absolute;
+    top: 40.85vw;
+    left: 0;
+}
+
+#side_panel #menu_sign_out {
+    position: absolute;
+    top: 45vw;
+    left: 0;
+}
+
+#side_panel #menu_lecture_practice:hover {
+    color: #333333;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+#side_panel #menu_self_recording:hover {
+    color: #333333;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+#side_panel #menu_ask_to_teacher:hover {
+    color: #333333;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+#side_panel #menu_ed_community:hover {
+    color: #333333;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+#side_panel #menu_mypage:hover {
+    color: #333333;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+#side_panel #menu_sign_out:hover {
+    color: #333333;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+#screen_blind {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 30;
+}
